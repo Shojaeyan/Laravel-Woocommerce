@@ -9,7 +9,7 @@
             "homepage": "http://iresume.ir"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable" : true,
     "homepage": "https://github.com/guidemaster/laravel-woocommerce",
     "keywords": ["Laravel", "LaravelWoocommerce"],
