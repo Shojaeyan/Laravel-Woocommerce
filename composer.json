@@ -9,10 +9,12 @@
             "homepage": "http://iresume.ir"
         }
     ],
+    "minimum-stability": "dev",
     "homepage": "https://github.com/guidemaster/laravel-woocommerce",
     "keywords": ["Laravel", "LaravelWoocommerce"],
     "require": {
-        "illuminate/support": "~9"
+        "illuminate/support": "~9",
+        "php": ">=7.2"
     },
     "require-dev": {
         "phpunit/phpunit": "~9.0",
@@ -37,6 +39,5 @@
                 "LaravelWoocommerce": "GuideMaster\\LaravelWoocommerce\\Facades\\LaravelWoocommerce"
             }
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
