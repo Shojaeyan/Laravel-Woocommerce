@@ -1,0 +1,44 @@
+{
+    "name": "guidemaster/laravel-woocommerce",
+    "description": ":package_description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hossein Shojaeyan",
+            "email": "guide.master@yahoo.com",
+            "homepage": "http://iresume.ir"
+        }
+    ],
+	"require": {
+        "php": ">=7.2"
+    },
+    "homepage": "https://github.com/guidemaster/laravel-woocommerce",
+    "keywords": ["Laravel", "LaravelWoocommerce"],
+    "require": {
+        "illuminate/support": "~9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "GuideMaster\\LaravelWoocommerce\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GuideMaster\\LaravelWoocommerce\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GuideMaster\\LaravelWoocommerce\\LaravelWoocommerceServiceProvider"
+            ],
+            "aliases": {
+                "LaravelWoocommerce": "GuideMaster\\LaravelWoocommerce\\Facades\\LaravelWoocommerce"
+            }
+        }
+    }
+}
