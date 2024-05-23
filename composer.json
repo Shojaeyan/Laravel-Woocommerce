@@ -10,6 +10,7 @@
         }
     ],
     "minimum-stability": "dev",
+    "prefer-stable" : true,
     "homepage": "https://github.com/guidemaster/laravel-woocommerce",
     "keywords": ["Laravel", "LaravelWoocommerce"],
     "require": {
