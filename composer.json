@@ -6,20 +6,34 @@
         {
             "name": "Hossein Shojaeyan",
             "email": "guide.master@yahoo.com",
-            "homepage": "http://iresume.ir"
+            "homepage": "http://iresume.ir",
+            "role": "Developer"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable" : true,
     "homepage": "https://github.com/guidemaster/laravel-woocommerce",
-    "keywords": ["Laravel", "LaravelWoocommerce"],
+    "keywords": [
+        "laravel",
+        "wordpress",
+        "woocommerce",
+        "rest",
+        "api",
+        "ecommerce",
+        "e-commerce",
+        "shop",
+        "cart"
+      ],
     "require": {
         "illuminate/support": "~9",
-        "php": ">=7.2"
+        "php" : "^7.0",
+        "automattic/woocommerce": "1.3.*"
     },
     "require-dev": {
         "phpunit/phpunit": "~9.0",
-        "orchestra/testbench": "~7"
+        "orchestra/testbench": "~7",
+        "php-coveralls/php-coveralls": "^2.7"
+
     },
     "autoload": {
         "psr-4": {
