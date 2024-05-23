@@ -9,9 +9,6 @@
             "homepage": "http://iresume.ir"
         }
     ],
-	"require": {
-        "php": ">=7.2"
-    },
     "homepage": "https://github.com/guidemaster/laravel-woocommerce",
     "keywords": ["Laravel", "LaravelWoocommerce"],
     "require": {
