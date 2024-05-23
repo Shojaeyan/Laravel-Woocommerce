@@ -31,11 +31,11 @@ class LaravelWoocommerceServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/laravel-woocommerce.php', 'laravel-woocommerce');
+        $this->mergeConfigFrom(__DIR__.'/../config/laravel-woocommerce.php', 'woocommerce');
 
         // Register the service the package provides.
-        $config = $this->app['config']->get('laravel-woocommerce');
-        $this->app->singleton('laravel-woocommerce.client', function() use ($config) {
+        $config = $this->app['config']->get('woocommerce');
+        $this->app->singleton('woocommerce.client', function() use ($config) {
             return new Client(
                 $config['store_url'],
                 $config['consumer_key'],
@@ -48,9 +48,9 @@ class LaravelWoocommerceServiceProvider extends ServiceProvider
                     'timeout' => $config['timeout'],
                 ]);
         });
-
-        $this->app->singleton('laravel-woocommerce', function ($app) {
-            return new LaravelWoocommerce;
+        $app = $this->app;
+        $this->app->singleton('GuideMaster\laravelWoocommerce\LaravelWoocommerce', function ($app) {
+            return new LaravelWoocommerce($app['woocommerce.client']);
         });
     }
 
