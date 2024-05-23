@@ -14,6 +14,9 @@ Via Composer
 ```bash
 composer require guidemaster/laravel-woocommerce
 ```
+```bash
+php artisan vendor:publish --tag=GuideMaster\LaravelWoocommerce\LaravelWoocommerceServiceProvide
+```
 
 ## Usage
 
